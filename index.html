@@ -92,25 +92,29 @@
     <main class="h-[50vw] flex justify-center items-center">
       <div class="bg-white/85 rounded-2xl">
         <!-- Form card -->
-        <!-- <form class="m-15" action="/submit">
+         <div id="formCard">
+        <form class="m-15" id="myForm">
           <legend class="italic text-2xl p-1">Login</legend>
           <fieldset>
             <label for="fname">First name:</label><br />
-            <input class="bg-white rounded" type="text" id="fname" name="fname" /><br />
+            <input class="bg-white rounded" type="text" id="fname" name="fname" required/><br />
             <label for="lname">Last name:</label><br />
-            <input class="bg-white rounded" type="text" id="lname" name="lname" /> <br>
+            <input class="bg-white rounded" type="text" id="lname" name="lname" required/> <br>
             <label for="uname">Username:</label><br>
-            <input class="bg-white rounded" type="text" name="uname" id="uname"> 
+            <input class="bg-white rounded" type="text" name="uname" id="uname" required> <br>
             <label for="DoB">Date of Birth</label><br>
-            <input class="rounded outline-1 outline-black" type="date" name="DoB" id="DoB"><br><br>
+            <input class="rounded outline-1 outline-black" type="date" name="DoB" id="DoB" required><br><br>
               <input class="bg-gradient-to-br from-[#ff7c77] via-[#fbc182] to-[#ffd7fe]  px-3 py-1 rounded" type="Submit" value="submit">
           </fieldset>
-        </form> -->
+        </form>
+        </div>
         <!-- Home content -->
-         <div class="flex flex-col p-10 w-[65vw]">
-            <h2 class="self-center justify-self-center">Welcome!</h2>
+         <div id="content" class="hidden flex-col p-10 w-[55vw]">
+            <h2 class="self-center justify-self-center text-3xl bold p-5 ">Welcome!</h2>
             <p id="motivation" class="pb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae velit officiis neque quaerat nemo perspiciatis quisquam quos illum tenetur, sed eos consequuntur omnis, mollitia perferendis deserunt dolorum animi a dolores!</p>
-            <p id="contentType">Lorem Ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p id="contentType">Lorem Ipsum dolor sit amet consectetur adipisicing elit. 
+            </p>
+            <button id="resetBtn" class="bg-amber-200 w-fit m-auto p-4 rounded">Reset</button>
          </div>
       </div>
     </main>
@@ -192,5 +196,6 @@
         </span>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
